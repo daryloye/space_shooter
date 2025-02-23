@@ -8,11 +8,11 @@ class AAlien
 protected:
 	int _posX, _posY;
 	char _ascii;
-	int _tick = 0;
+	int _tick;
 	int _health;
 
 public:
-	AAlien(int x, int y, char c, int health = 1) : _posX(x), _posY(y), _ascii(c), _health(health) {}
+	AAlien(int x, int y, char c, int health = 1) : _posX(x), _posY(y), _ascii(c), _tick(0), _health(health) {}
 	virtual ~AAlien() {};
 
 	int getPositionX() { return _posX; }

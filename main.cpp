@@ -74,7 +74,10 @@ void Logic()
 		int alienY = (*iterA)->getPositionY();
 
 		if ( alienY == height - 1)
+		{
 			End();
+			return;
+		}
 
 		for (std::list<Laser*>::const_iterator iterL = lasers.begin(); iterL != lasers.end();)
 		{
